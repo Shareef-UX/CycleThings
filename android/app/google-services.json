@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "355693736549",
+    "project_id": "cyclethings-e9fd9",
+    "storage_bucket": "cyclethings-e9fd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355693736549:android:be12cf16884b07b2c70c8c",
+        "android_client_info": {
+          "package_name": "com.example.cyclethings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355693736549-ikede6p9m0qc85dq7i3b9dvoknhdrhbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqjk_op-O96N-UxTG0525h7EbLg-nJkI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355693736549-ikede6p9m0qc85dq7i3b9dvoknhdrhbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
