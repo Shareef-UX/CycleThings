@@ -96,17 +96,17 @@ class _HomeScreen extends State<HomeScreen> {
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.star),
-            title: Text('Favorites'),
+            label: 'Favorites',
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.message),
-            title: Text('Messages'),
+            label: 'Messages',
           ),
         ],
       ),

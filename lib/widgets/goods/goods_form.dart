@@ -79,7 +79,7 @@ class _GoodsFormState extends State<GoodsForm> {
     String docsChat = DateTime.now().millisecondsSinceEpoch.toString();
     FocusScope.of(context).unfocus();
     if (_goodImageFile == null) {
-      Scaffold.of(context).showSnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Please pick image.'),
           backgroundColor: Theme.of(context).errorColor,
@@ -339,7 +339,7 @@ class _GoodsFormState extends State<GoodsForm> {
                     if (!_isedit)
                       Align(
                         alignment: Alignment.bottomRight,
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           child: Text('Add List Item'),
                           onPressed: () => _trySubmit(
                               titleController.text,
@@ -354,7 +354,7 @@ class _GoodsFormState extends State<GoodsForm> {
                       ),
                     if (_isedit)
                       Align(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           child: Text('Update Item'),
                           onPressed: () => _tryUpdate(
                               titleController.text,
@@ -369,7 +369,7 @@ class _GoodsFormState extends State<GoodsForm> {
                       ),
                     if (_isedit)
                       Align(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           child: Text('Delete Item'),
                           onPressed: () => _tryDelete(goodsid, context),
                         ),
