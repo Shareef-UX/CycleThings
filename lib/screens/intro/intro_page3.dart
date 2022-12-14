@@ -28,7 +28,7 @@ class IntroPage3 extends StatelessWidget {
           SizedBox(
             height: 75,
           ),
-          ElevatedButton(
+          RaisedButton(
             onPressed: () => Navigator.push(
               context,
               MaterialPageRoute(

@@ -42,9 +42,8 @@ class _GoodsImagePickerState extends State<GoodsImagePicker> {
                       ? null
                       : NetworkImage(widget.imageUrl),
               shape: GFAvatarShape.standard),
-          TextButton.icon(
-              style: TextButton.styleFrom(
-                  foregroundColor: Theme.of(context).primaryColor),
+          FlatButton.icon(
+              textColor: Theme.of(context).primaryColor,
               onPressed: _pickImages,
               icon: Icon(Icons.image),
               label: Text('Add Image')),
