@@ -7,6 +7,7 @@ import 'package:getwidget/getwidget.dart';
 class GoodsImagePicker extends StatefulWidget {
   // const GoodsImagePicker({Key? key}) : super(key: key);
   GoodsImagePicker(this.imagePickFn, this.imageUrl);
+
   final void Function(File pickedImage) imagePickFn;
   final String imageUrl;
 
@@ -15,8 +16,10 @@ class GoodsImagePicker extends StatefulWidget {
 }
 
 class _GoodsImagePickerState extends State<GoodsImagePicker> {
-  File _pickedImage;
   String imageUrl;
+
+  File _pickedImage;
+
   void _pickImages() async {
     final pickedimagefile = await ImagePicker.pickImage(
         source: ImageSource.camera, imageQuality: 50);
@@ -39,8 +42,9 @@ class _GoodsImagePickerState extends State<GoodsImagePicker> {
                       ? null
                       : NetworkImage(widget.imageUrl),
               shape: GFAvatarShape.standard),
-          FlatButton.icon(
-              textColor: Theme.of(context).primaryColor,
+          TextButton.icon(
+              style: TextButton.styleFrom(
+                  foregroundColor: Theme.of(context).primaryColor),
               onPressed: _pickImages,
               icon: Icon(Icons.image),
               label: Text('Add Image')),
